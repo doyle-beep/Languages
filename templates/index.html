@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}
+Country
+{% endblock %}
+
+
+{% block content %}
+
+
+<form method="POST" action="">
+
+    <h2>Language Selector</h2>
+
+    {{ form.csrf_token }}
+
+    <p>{{ form.clist.label}} {{ form.clist }}</p>
+
+    <p>{{ form.official }} {{ form.official.label }}</p>
+
+    <p>{{ form.submit }}</p>
+
+    <h2>End of the Block</h2>
+
+</form>
+
+{% endblock %}
