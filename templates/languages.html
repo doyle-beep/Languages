@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% from 'bootstrap5/form.html' import render_form %}
+
+{% block title %}
+Languages
+{% endblock %}
+
+
+
+{% block content %}
+
+    <table>
+        <tr>
+            <td class="header">Language</td>
+            <td class="header">Official?</td>
+            <td class="header">Percentage</td>
+        </tr>
+
+        {% if off == 'True' %}
+
+            {% for l in langs %}
+                {% if l.IsOfficial == 'T' %}
+                    <tr>
+                        <td>{{ l.Language }}</td>
+                        <td class="cen">&check;</td>
+                        <td class="right">{{ l.Percentage }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+
+        {% else %}
+
+            {% for l in langs %}
+                <tr>
+                    <td>{{ l.Language }}</td>
+                    {% if l.IsOfficial == 'T' %}
+                        <td class="cen">&check;</td>
+                    {% else %}
+                        <td class="cen"> </td>
+                    {% endif %}
+                    <td class="right">{{ l.Percentage }}</td>
+                </tr>
+            {% endfor %}
+
+        {% endif %}
+
+
+
+    </table>
+
+<h1>
+    {{ cc }}
+</h1>
+
+{% endblock %}
