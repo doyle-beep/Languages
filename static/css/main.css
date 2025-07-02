@@ -1,0 +1,166 @@
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    margin: 10px;
+    background-color: white;
+}
+
+table.invisible {
+    display: none;
+}
+
+table.box {
+    background-color: rgb(248, 255, 244);
+}
+
+td {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-bottom: 1px solid black;
+    text-align: left;
+}
+
+td.num {
+    text-align: right;
+}
+
+td.right {
+    text-align: right;
+}
+
+td.cen {
+    text-align: center;
+}
+
+td.highlighted {
+    background-color: lightyellow;
+}
+
+.altrow td {
+    background-color:rgb(227, 249, 227);
+}
+
+.header {
+    background-color: darkgreen;
+    color: rgb(227, 249, 227);
+    font-weight: bold;
+}
+
+td.header {
+    background-color: darkgreen;
+    color: rgb(227, 249, 227);
+    font-weight: bold;
+}
+
+body {
+    background-color: rgb(248, 255, 244);
+    margin: 10px;
+}
+
+form.normal {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+    border: none;
+    background-color: rgb(248, 255, 244);
+}
+
+form {
+    display: inline-block;
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+div {
+    display: inline-block;
+    background-color: rgb(233, 240, 229);
+    padding: 10px;
+    margin: 30px;
+    border: 1px solid black;
+}
+
+div.invisible {
+    display: none;
+}
+
+p.invisible {
+    display: none;
+}
+
+h1 {
+    font-family: "Lucida Handwriting", "Brush Script MT", cursive;
+    text-align: center;
+    font-size: xxx-large;
+    color: rgb(0, 35, 0);
+    margin: 1px;
+}
+
+.cen {
+    text-align: center;
+}
+
+div.header {
+    background-image: radial-gradient(rgb(211, 224, 203), rgb(248, 255, 244));
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    position: sticky;
+}
+
+
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+.topnav {
+    background-color: rgb(0, 42, 40);
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    color: rgb(248, 255, 244);
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #333;
+    background: rgb(6, 107, 102);
+    margin: 0;
+}
+#container {
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0, 0, 0);
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 2rem 4rem;
+    background: rgb(248, 255, 244);
+    overflow: auto;
+}
+
+.left {
+    text-align: left;
+}
+
+
+/* links */
+
+a {
+    color: #009;
+    text-decoration: none;
+}
+a:hover {
+    color: #0cc;
+    text-decoration: underline;
+}
+
